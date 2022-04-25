@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --box-shadow: 0 0 2px 3px black;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+html {
+  scroll-behavior: smooth;
+}
+input {
+  padding: 0.5rem;
+  box-shadow: var(--box-shadow);
+}
+label {
+  font-weight: 600;
+}
+
+.exchange-container {
+  background-color: rgb(238, 238, 238);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.exchange-container h1 {
+  margin-bottom: 5rem;
+
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.currencyFrom {
+  align-items: center;
+}
+.currencyFrom select {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+.currencyFrom input {
+  width: 15rem;
+}
+.currencyTo {
+  align-items: center;
+}
+.currencyTo select {
+  width: 10rem;
+  margin-bottom: 2rem;
+}
+.change {
+  outline: none;
+  border: none;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+}
+.change:focus {
+  outline: none;
+  border: none;
+}
+#amountOut {
+  border: 1px solid black;
+  width: 15rem;
+  padding: 0.5rem;
+  min-height: 3rem;
+  box-shadow: var(--box-shadow);
+}
+.currencyResult p {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.warning {
+  color: red;
+  display: none;
+}
+.warning.active {
+  display: block;
+}
+.revert {
+  border: none;
+  outline: none;
+}
+.revert:focus {
+  border: none;
+  outline: none;
+}
+.revert i {
+  font-size: 3rem;
+  border-radius: 50%;
+  box-shadow: var(--box-shadow);
+  padding: 0.5rem 1rem 0.5rem 1rem;
+}
+.bi-arrow-down-up {
+  display: none;
+}
+@media (max-width: 767px) {
+  .bi-arrow-down-up {
+    display: block;
+  }
+  .bi-arrow-left-right {
+    display: none;
+  }
+}
